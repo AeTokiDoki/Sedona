@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Сергей Подшиблов](https://up.htmlacademy.ru/htmlcss/30/user/1162909).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Корейкин] (https://htmlacademy.ru/profile/ankormoreankor)
 
 ---
 
