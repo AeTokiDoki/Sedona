@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Городок Седона</title>
+  <title>Седона: поиск жилья</title>
 </head>
 
 <body>
@@ -46,16 +46,16 @@
           <legend>Тип жилья:</legend>
           <ul>
             <li>
-              <label for="Hotel">Гостиница</label>
-              <input type="checkbox" id="Hotel" name="Hotel" checked>
+              <label for="hotel">Гостиница</label>
+              <input type="checkbox" id="hotel" name="hotel" checked>
             </li>
             <li>
               <label for="motel">Мотель</label>
               <input type="checkbox" id="motel" name="motel" checked>
             </li>
             <li>
-              <label for="Apartments">Апартаменты</label>
-              <input type="checkbox" id="Apartments" name="Apartments" checked>
+              <label for="apartments">Апартаменты</label>
+              <input type="checkbox" id="apartments" name="apartments" checked>
             </li>
           </ul>
         </fieldset>
@@ -77,6 +77,7 @@
       </form>
     </section>
     <section>
+      <h2>Список доступных гостиниц</h2>
       <aside>
         <span>найдено:3</span>
         <div>
@@ -85,8 +86,8 @@
             <li><a href="#">по цене</a></li>
             <li><a href="#">по типу</a></li>
             <li><a href="#">по рейтингу</a></li>
-            <li><a href="#">стрелка вверх</a></li>
-            <li><a href="#">стрелка вниз</a></li>
+            <li><a href="#" aria-label="по убыванию"></a></li>
+            <li><a href="#" aria-label="по возрастанию"></a></li>
           </ul>
         </div>
       </aside>
@@ -101,8 +102,8 @@
           <p>Рейтинг 8.5</p>
         </li>
         <li>
-          <img src="https://via.placeholder.com/150x100" alt="Amara Resort & Spa">
-          <p>Desert Quail Inn</p>
+          <img src="https://via.placeholder.com/150x100" alt="Desert Quail Inn">
+          <h3>Desert Quail Inn</h3>
           <span>Мотель</span>
           <span>от 3000 р.</span>
           <a href="#">Подробнее</a>
@@ -110,8 +111,8 @@
           <p>Рейтинг 8.9</p>
         </li>
         <li>
-          <img src="https://via.placeholder.com/150x100" alt="Amara Resort & Spa">
-          <p>Villas at Poco Diablo</p>
+          <img src="https://via.placeholder.com/150x100" alt="Villas at Poco Diablo">
+          <h3>Villas at Poco Diablo</h3>
           <span>Апартаменты</span>
           <span>От 2000 Р.</span>
           <a href="#">Подробнее</a>
