@@ -1,3 +1,5 @@
+/* Fotns */
+
 @font-face {
   font-family: "PT Sans";
   src: local("PTSans-Bold.woff"), local("PTSans-bold.woff2");
@@ -11,3 +13,12 @@
   font-style: normal;
 }
 
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-dark: #666666;
+  --basic-white: #ffffff;
+  --light-blue: #81b3d2;
+  --basic-brown: #766357;
+}
