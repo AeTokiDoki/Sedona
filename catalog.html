@@ -33,104 +33,117 @@
       </a>
     </nav>
   </header>
-  <main>
+  <main class="wrap">
     <h1 class="visually-hidden">Выбор жилья</h1>
-    <section>
+    <section class="search-hotel">
       <h2 class="visually-hidden">фильтр жилья</h2>
-      <form action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset>
-          <legend>Инфрастркутура:</legend>
-          <ul>
-            <li>
-              <label for="swimming">Бассейн</label>
-              <input type="checkbox" id="swimming" name="swimming" checked>
+      <form class="search-hotel__form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="services">
+          <legend class="services__title">Инфрастркутура:</legend>
+          <ul class="services__list">
+            <li class="services__items">
+              <label class="services__label" for="swimming">Бассейн</label>
+              <input class="services__input services__input--active" type="checkbox" id="swimming" name="swimming"
+                checked>
             </li>
-            <li>
-              <label for="parking">Парковка</label>
-              <input type="checkbox" id="parking" name="parking">
+            <li class="services__items">
+              <label class="services__label" for="parking">Парковка</label>
+              <input class="services__input" type="checkbox" id="parking" name="parking">
             </li>
-            <li>
-              <label for="wifi">WI-FI</label>
-              <input type="checkbox" id="wifi" name="wifi">
+            <li class="services__items">
+              <label class="services__label" for="wifi">WI-FI</label>
+              <input class="services__input" type="checkbox" id="wifi" name="wifi">
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Тип жилья:</legend>
-          <ul>
-            <li>
-              <label for="hotel">Гостиница</label>
-              <input type="checkbox" id="hotel" name="hotel" checked>
+        <fieldset class="type-house">
+          <legend class="type-house__title">Тип жилья:</legend>
+          <ul class="type-house__list">
+            <li class="type-house__items">
+              <label class="type-house__label" for="hotel">Гостиница</label>
+              <input class="type-house__input" type="checkbox" id="hotel" name="hotel" checked>
             </li>
-            <li>
-              <label for="motel">Мотель</label>
-              <input type="checkbox" id="motel" name="motel" checked>
+            <li class="type-house__items">
+              <label class="type-house__label" for="motel">Мотель</label>
+              <input class="type-house__input" type="checkbox" id="motel" name="motel" checked>
             </li>
-            <li>
-              <label for="apartments">Апартаменты</label>
-              <input type="checkbox" id="apartments" name="apartments" checked>
+            <li class="type-house__items">
+              <label class="type-house__label" for="apartments">Апартаменты</label>
+              <input class="type-house__input" type="checkbox" id="apartments" name="apartments" checked>
             </li>
           </ul>
         </fieldset>
         <fieldset class="filter-range">
-          <legend class="filter-range-title">Стоимость в сутки (р):</legend>
+          <legend class="filter-range__title">Стоимость в сутки (р):</legend>
           <div class="price-controls">
-            <label class="min-price">от <input type="number" name="min-price" value="0" min="0"></label>
-            <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
+            <label class="price-controls__min">от <input type="number" name="min-price" value="0" min="0"></label>
+            <label class="price-controls__max">до <input type="number" name="max-price" value="3000"></label>
           </div>
           <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
+            <div class="range-controls__scale">
+              <div class="range-controls__bar"></div>
             </div>
-            <div class="range-toggle range-toggle-min"></div>
-            <div class="range-toggle range-toggle-max"></div>
+            <div class="range-controls__less range-controls__less--check"></div>
+            <div class="range-controls__more range-controls__more--check"></div>
           </div>
           <button class="btn-transparent" type="submit">Показать</button>
         </fieldset>
       </form>
     </section>
-    <section>
+    <section class="available-hotel">
       <h2 class="visually-hidden">Список доступных гостиниц</h2>
-      <aside>
-        <span>найдено:3</span>
-        <div>
-          <h3>сортировка:</h3>
-          <ul>
-            <li><a href="#">по цене</a></li>
-            <li><a href="#">по типу</a></li>
-            <li><a href="#">по рейтингу</a></li>
-            <li><a href="#" aria-label="По убыванию"></a></li>
-            <li><a href="#" aria-label="По возрастанию"></a></li>
-          </ul>
+      <aside class="found">
+        <span class="found__title">найдено:3</span>
+        <div class="sorting">
+          <h3" class="sorting__title">сортировка:</h3>
+            <ul class="sorting__list">
+              <li class="sorting__items">
+                <a class="sorting__link sorting__link--active" href="#">по цене</a>
+              </li>
+              <li class="sorting__items">
+                <a class="sorting__link" href="#">по типу</a>
+              </li>
+              <li class="sorting__items">
+                <a class="sorting__link" href="#">по рейтингу</a>
+              </li>
+              <li class="sorting__items">
+                <a class="sorting__link sorting__link--descending" href="#" aria-label="По убыванию"></a>
+              </li>
+              <li class="sorting__items">
+                <a class="sorting__link sorting__link--ascending" href="#" aria-label="По возрастанию"></a>
+              </li>
+            </ul>
         </div>
       </aside>
-      <ul>
-        <li>
-          <img src="img/amara-resort.jpg" alt="Amara Resort & Spa" width="135" height="90">
-          <h3><a href="#">Amara Resort & Spa</a></h3>
-          <span>Гостиница</span>
-          <span>от 4000 р.</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
-          <p>Рейтинг 8.5</p>
+      <ul class="list-hotels">
+        <li class="list-hotels__item">
+          <img class="list-hotels__image" src="img/amara-resort.jpg" alt="Amara Resort & Spa" width="135" height="90">
+          <h3 class="list-hotels__title">
+            <a class="list-hotels__link" href="#">Amara Resort & Spa</a>
+          </h3>
+          <span class="list-hotels__text">Гостиница</span>
+          <span class="list-hotels__text">от 4000 р.</span>
+          <a class="list-hotels__detail" href="#">Подробнее</a>
+          <a class="list-hotels__take" href="#">Забронировать</a>
+          <p class="list-hotels__desc">Рейтинг 8.5</p>
         </li>
-        <li>
+        <li class="list-hotels__item">
           <img src="img/desert-quail.jpg" alt="Desert Quail Inn" width="135" height="90">
-          <h3>Desert Quail Inn</h3>
-          <span>Мотель</span>
-          <span>от 3000 р.</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
-          <p>Рейтинг 8.9</p>
+          <h3 class="list-hotels__title">Desert Quail Inn</h3>
+          <span class="list-hotels__text">Мотель</span>
+          <span class="list-hotels__text">от 3000 р.</span>
+          <a class="list-hotels__detail" href="#">Подробнее</a>
+          <a class="list-hotels__take" href="#">Забронировать</a>
+          <p class="list-hotels__desc">Рейтинг 8.9</p>
         </li>
-        <li>
+        <li class="list-hotels__item">
           <img src="img/villas.jpg" alt="Villas at Poco Diablo" width="135" height="90">
-          <h3>Villas at Poco Diablo</h3>
-          <span>Апартаменты</span>
-          <span>От 2000 Р.</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
-          <p>Рейтинг 9.2</p>
+          <h3 class="list-hotels__title">Villas at Poco Diablo</h3>
+          <span class="list-hotels__text">Апартаменты</span>
+          <span class="list-hotels__text">От 2000 Р.</span>
+          <a class="list-hotels__detail" href="#">Подробнее</a>
+          <a class="list-hotels__take" href="#">Забронировать</a>
+          <p class="list-hotels__desc">Рейтинг 9.2</p>
         </li>
       </ul>
     </section>
