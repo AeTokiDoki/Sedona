@@ -48,7 +48,7 @@
   line-height: 21px;
   font-weight: normal;
   text-transform: uppercase;
-  background-color: var(--basic-white);
+  background: var(--basic-white);
 }
 
 /* Main header */
@@ -269,6 +269,4 @@
   line-height: 26px;
 }
 .main-footer__copyright-icon {
-}
-.main-footer__copyright-img:hover {
 }

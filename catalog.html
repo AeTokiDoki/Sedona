@@ -11,24 +11,32 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Информация</a></li>
-        <li><a href="#">Фото и видео</a></li>
-        <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+<body class="page-body">
+  <header class="main-header">
+    <nav class="main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a class="main-menu__link main-menu__link--active" href="index.html">Информация</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Фото и видео</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">Карта штата</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="catalog.html">Гостиницы</a>
+        </li>
       </ul>
-      <a href="index.html">
-        <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
+      <a class="main-menu__logo">
+        <img src="img/logo.svg" alt="Логотип Седона" width="138" height="70">
       </a>
     </nav>
   </header>
   <main>
-    <h1>Выбор жилья</h1>
+    <h1 class="visually-hidden">Выбор жилья</h1>
     <section>
-      <h2>фильтр жилья</h2>
+      <h2 class="visually-hidden">фильтр жилья</h2>
       <form action="https://echo.htmlacademy.ru/" method="get">
         <fieldset>
           <legend>Инфрастркутура:</legend>
@@ -82,7 +90,7 @@
       </form>
     </section>
     <section>
-      <h2>Список доступных гостиниц</h2>
+      <h2 class="visually-hidden">Список доступных гостиниц</h2>
       <aside>
         <span>найдено:3</span>
         <div>
@@ -127,22 +135,31 @@
       </ul>
     </section>
   </main>
-  <footer>
-    <div>
-      <p>#visitSEDONA</p>
-      <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+  <footer class="main-footer">
+    <div class="main-footer__contacts">
+      <p class="main-footer__text">#visitSEDONA</p>
+      <a class="main-footer__tel" href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
     </div>
-    <!-- <div>
-      <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+    <div class="main-footer__social">
+      <ul class="main-footer__list">
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#"></a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#"></a>
+        </li>
+        <li class="main-footer__item">
+          <a class="main-footer__link" href="#"></a>
+        </li>
       </ul>
-    </div> -->
-    <div>
-      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" alt="Логотип академии" width="115" height="41">
-        </a></p>
+    </div>
+    <div class="main-footer__logo">
+      <p class="main-footer__copyright">Website by
+        <a class="main-footer__copyright-icon" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img class="main-footer__copyright-img" src="img/logo-htmlacademy.svg" alt="Логотип академии" width="115"
+            height="41">
+        </a>
+      </p>
     </div>
   </footer>
 </body>
