@@ -20,6 +20,120 @@
   --basic-black: #000000;
   --basic-dark: #666666;
   --basic-white: #ffffff;
-  --light-blue: #81b3d2;
+  --basic-blue: #81b3d2;
+  --blue: #669ec0;
+  --extra-blue: #5496bd;
   --basic-brown: #766357;
+  --brown: #604e43;
+  --extra-brown: #503e33;
+}
+
+/* Global */
+
+.page {
+}
+.page-body {
+  font-family: "PT Sans", Arial, sans-serif;
+}
+.main-header {
+}
+.main-menu {
+}
+.main-menu__list {
+}
+.main-menu__item {
+}
+.main-menu__link {
+}
+.main-menu__logo {
+}
+.wrapper {
+}
+.visually-hidden {
+}
+.welcome {
+}
+.welcome__title {
+}
+.features {
+}
+.features__slogan {
+}
+.features__cause {
+}
+.features-list {
+}
+.features-list__item {
+}
+.features-list__block {
+}
+.features-list__content {
+}
+.features-list__title {
+}
+.features-list__text {
+}
+.features-list__img {
+}
+.sublist {
+}
+.sublist__item {
+}
+.sublist__title {
+}
+.sublist__text {
+}
+.features-list__block--left {
+}
+.search-hotel {
+}
+.search-hotel__subtitle {
+}
+.search-hotel__text {
+}
+.search-hotel__button {
+}
+.search-form {
+}
+.search-form__item {
+}
+.search-form__label {
+}
+.search-form__input {
+}
+.search-form__button {
+}
+.search-form__button--less {
+}
+.search-form__button--more {
+}
+.search-form__btn {
+}
+.map {
+}
+.map__img {
+}
+.main-footer {
+}
+.main-footer__contacts {
+}
+.main-footer__text {
+}
+.main-footer__tel {
+}
+.main-footer__social {
+}
+.main-footer__list {
+}
+.main-footer__item {
+}
+.main-footer__link {
+}
+.main-footer__logo {
+}
+.main-footer__copyright {
+}
+.main-footer__copyright-icon {
+}
+.main-footer__copyright-img {
 }
