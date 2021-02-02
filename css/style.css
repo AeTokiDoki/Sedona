@@ -243,10 +243,11 @@
 
 /* search form */
 
-.search-hotel__form {
-  background-color: var(--basic-white);
+.search-hotel {
   background-image: url("../img/filter-bg.jpg");
-  background-repeat: no-repeat;
+}
+
+.search-hotel__form {
 }
 
 .services {
@@ -270,7 +271,6 @@
 /* price form */
 
 .filter-range {
-  background-color: var(--basic-blue);
   color: var(--basic-white);
 }
 
