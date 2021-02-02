@@ -112,9 +112,6 @@
   background-color: var(--basic-blue);
 }
 
-.features-list__content {
-}
-
 .features-list__title {
   text-align: center;
   font-size: 21px;
@@ -132,19 +129,19 @@
 
 /* Form */
 
-.search-hotel__subtitle {
+.search__subtitle {
   font-size: 30px;
   font-weight: bold;
   line-height: 24px;
   text-align: center;
 }
 
-.search-hotel__text {
+.search__text {
   text-align: center;
   line-height: 24px;
 }
 
-.search-hotel__button {
+.search__button {
   font-weight: bold;
   font-size: 21px;
   text-align: center;
@@ -154,11 +151,11 @@
   height: 86px;
 }
 
-.search-hotel__button:hover {
+.search__button:hover {
   background-color: var(--brown);
 }
 
-.search-hotel__button:focus {
+.search__button:focus {
   background-color: var(--extra-brown);
   color: var(--animation);
 }
