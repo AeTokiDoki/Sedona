@@ -27,8 +27,8 @@
   --basic-brown: #766357;
   --brown: #604e43;
   --extra-brown: #503e33;
-  --special: #666666;
-  --animation: rgba(255, 255, 255, 0.3);
+  --rating-text: #666666;
+  --blue-opacity: rgba(255, 255, 255, 0.3);
 }
 
 /* Visually-hidden */
@@ -52,15 +52,20 @@
 }
 
 .list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 .link {
   text-decoration: none;
   color: var(--basic-white);
 }
 
+.title {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+}
 /* Main header */
 
 .main-header {
@@ -98,8 +103,8 @@
 }
 
 .features__slogan {
-  text-align: center;
   font-size: 21px;
+  text-align: center;
   line-height: 26px;
   font-weight: bold;
 }
@@ -107,19 +112,8 @@
 /* Features */
 
 .features-list__block {
-  text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-blue);
-}
-
-.features-list__title {
-  text-align: center;
-  font-size: 21px;
-  font-weight: bold;
-}
-
-.features-list__text {
-  text-align: center;
 }
 
 .sublist__title {
@@ -142,13 +136,13 @@
 }
 
 .search__button {
+  width: 568px;
+  height: 86px;
   font-weight: bold;
   font-size: 21px;
   text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-brown);
-  width: 568px;
-  height: 86px;
 }
 
 .search__button:hover {
@@ -156,8 +150,8 @@
 }
 
 .search__button:focus {
+  color: var(--blue-opacity);
   background-color: var(--extra-brown);
-  color: var(--animation);
 }
 
 .search-form {
@@ -171,39 +165,27 @@
   text-align: center;
 }
 
-.search-form__button--less {
+.search-form__button {
   background-color: var(--basic-dark);
 }
 
-.search-form__button--less:hover {
+.search-form__button:hover {
   background-color: var(--basic-black);
 }
 
-.search-form__button--less:focus {
-  background-color: var(--basic-blue);
-}
-
-.search-form__button--more {
-  background-color: var(--basic-dark);
-}
-
-.search-form__button--more:hover {
-  background-color: var(--basic-black);
-}
-
-.search-form__button--more:focus {
+.search-form__button:focus {
   background-color: var(--basic-blue);
 }
 
 .search-form__btn {
-  color: var(--basic-white);
+  width: 458px;
+  height: 58px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  background-color: var(--basic-blue);
-  width: 458px;
-  height: 58px;
   text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
 }
 
 .search-form__btn:hover {
@@ -211,8 +193,8 @@
 }
 
 .search-form__btn:focus {
+  color: var(--blue-opacity);
   background-color: var(--extra-blue);
-  color: rgba(255, 255, 255, 0.3);
 }
 
 /* map */
@@ -226,10 +208,10 @@
 }
 
 .main-footer__tel {
-  color: var(--basic-black);
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  color: var(--basic-black);
 }
 
 .main-footer__copyright {
@@ -242,9 +224,6 @@
 
 .search-hotel {
   background-image: url("../img/filter-bg.jpg");
-}
-
-.search-hotel__form {
 }
 
 .services {
@@ -272,32 +251,27 @@
 }
 
 .btn-transparent {
-  background-color: var(--basic-blue);
   color: var(--basic-white);
-  border: 2px solid;
+  background-color: var(--basic-blue);
+  border: 2px solid #ffffff;
   box-sizing: border-box;
   border-radius: 2px;
 }
 
 .btn-transparent:hover {
-  background-color: var(--basic-white);
   color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 /* sorting */
 
 .found__title {
-  font-size: 21px;
-  font-weight: bold;
   line-height: 26px;
 }
 
 .sorting__title {
   font-size: 12px;
   line-height: 18px;
-}
-
-.sorting__list {
 }
 
 .sorting__link {
@@ -310,13 +284,7 @@
   color: var(--basic-blue);
 }
 
-.sorting__link--type {
-  color: var(--basic-black);
-  opacity: 0.3;
-}
-
-.sorting__link--rating {
-  color: var(--basic-black);
+.tip {
   opacity: 0.3;
 }
 
@@ -350,8 +318,8 @@
 }
 
 .hotels__detail {
-  background-color: var(--basic-blue);
   font-weight: bold;
+  background-color: var(--basic-blue);
 }
 
 .hotels__detail:hover {
@@ -359,13 +327,13 @@
 }
 
 .hotels__detail:focus {
+  color: var(--blue-opacity);
   background-color: var(--extra-blue);
-  color: var(--animation);
 }
 
 .hotels__take {
-  background-color: var(--basic-brown);
   font-weight: bold;
+  background-color: var(--basic-brown);
 }
 
 .hotels__take:hover {
@@ -373,10 +341,10 @@
 }
 
 .hotels__take:focus {
+  color: var(--blue-opacity);
   background-color: var(--extra-brown);
-  color: var(--animation);
 }
 
 .hotels__desc {
-  color: var(--special);
+  color: var(--rating-text);
 }
