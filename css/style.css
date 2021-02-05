@@ -116,11 +116,6 @@
   background-color: var(--basic-blue);
 }
 
-.sublist__title {
-  font-size: 21px;
-  font-weight: bold;
-}
-
 /* Form */
 
 .search__subtitle {
@@ -201,21 +196,19 @@
 
 /* main footer */
 
-.main-footer__text {
-  font-weight: bold;
+.main-footer {
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
 }
 
 .main-footer__tel {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
   color: var(--basic-black);
 }
 
 .main-footer__copyright {
-  line-height: 26px;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 /* catalog */
@@ -253,7 +246,7 @@
 .btn-transparent {
   color: var(--basic-white);
   background-color: var(--basic-blue);
-  border: 2px solid #ffffff;
+  border: 2px solid var(--basic-white);
   box-sizing: border-box;
   border-radius: 2px;
 }
@@ -299,8 +292,6 @@
 /* hotels */
 
 .hotels__title {
-  font-weight: bold;
-  font-size: 21px;
   line-height: 26px;
 }
 
