@@ -94,11 +94,6 @@
 
 /* Main header */
 
-.main-menu__logo {
-  width: 138px;
-  height: 70px;
-}
-
 .main-header {
   font-weight: bold;
   color: var(--basic-black);
@@ -138,8 +133,11 @@
 }
 
 .main-header__logo {
+  width: 138px;
+  height: 70px;
+
   position: absolute;
-  left: 730px;
+  left: 888px;
   z-index: 1;
 }
 
@@ -210,11 +208,13 @@
 .features-list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 54px;
 }
 
 .features-list__item--short {
   max-width: 400px;
   width: 100%;
+  min-height: 256px;
   background-color: var(--background-item);
 
   display: flex;
@@ -223,6 +223,7 @@
   align-items: center;
   text-align: center;
   padding: 0 48px;
+  padding-bottom: 34px;
 }
 
 .features-start {
@@ -284,6 +285,8 @@
 
 .search {
   grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
 }
 
 .search__subtitle {
@@ -306,6 +309,8 @@
   text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-brown);
+  margin: 0 auto;
+  border: none;
 }
 
 .search__button:hover {
@@ -320,12 +325,32 @@
 .search-form {
   font-weight: bold;
   line-height: 26px;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  min-height: 395px;
+  max-width: 568px;
+  position: relative;
+  left: 316px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.search-form__item {
+  display: flex;
+  justify-content: center;
+}
+
+.humans {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 55px;
 }
 
 .search-form__input {
   font-weight: bold;
   line-height: 26px;
   text-align: center;
+  border: none;
 }
 
 .search-form__button {
@@ -349,6 +374,9 @@
   text-align: center;
   color: var(--basic-white);
   background-color: var(--basic-blue);
+  border: none;
+
+  margin: 0 auto;
 }
 
 .search-form__btn:hover {
@@ -372,15 +400,50 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-footer__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-footer__text {
+  text-align: center;
+  margin-bottom: 9px;
 }
 
 .main-footer__tel {
   color: var(--basic-black);
+  margin-bottom: 36px;
+}
+
+.main-footer__list {
+  max-width: 138px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer__link {
+  max-width: 46px;
+  max-height: 48px;
+  background-color: var(--basic-blue);
 }
 
 .main-footer__copyright {
   font-size: 14px;
   font-weight: normal;
+
+  display: flex;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.main-footer__copyright-img {
+  margin-left: 8px;
 }
 
 /* catalog */

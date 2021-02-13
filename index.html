@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="content">
   <div class="page-body">
     <header class="main-header">
       <img class="main-header__logo img" src="img/logo.svg" alt="Логотип Седона" width="138" height="70">
@@ -94,7 +94,7 @@
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="search__subtitle">Заинтересовались?</p>
-        <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+        <p class="search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
           седоне</p>
         <button class="search__button" type="button">Поиск гостиницы в Седоне</button>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -108,24 +108,22 @@
             <input class="search-form__input" type="text" id="departure" value="4 июля 2017">
             <button class="search-form__button" type="button">Календарь</button>
           </div>
-          <div class="search-form__item">
-            <label class="search-form__label" for="adults">Взрослые</label>
-            <input class="search-form__input" type="number" id="adults" value="2">
-            <button class="search-form__button" type="button">Меньше</button>
-            <button class="search-form__button" type="button">Больше</button>
-          </div>
-          <div class="search-form__item">
-            <label class="search-form__label" for="children">Дети</label>
-            <input class="search-form__input" type="number" id="children" value="0">
-            <button class="search-form__button" type="button">Меньше</button>
-            <button class="search-form__button" type="button">Больше</button>
+          <div class="humans">
+            <div class="search-form__item">
+              <label class="search-form__label" for="adults">Взрослые:</label>
+              <input class="search-form__input" type="number" id="adults" value="2">
+              <button class="search-form__button" type="button">-</button>
+              <button class="search-form__button" type="button">+</button>
+            </div>
+            <div class="search-form__item">
+              <label class="search-form__label" for="children">Дети:</label>
+              <input class="search-form__input" type="number" id="children" value="0">
+              <button class="search-form__button" type="button">-</button>
+              <button class="search-form__button" type="button">+</button>
+            </div>
           </div>
           <button class="search-form__btn" type="submit">НАЙТИ</button>
         </form>
-      </section>
-      <section class="map">
-        <h2 class="visually-hidden">Карта</h2>
-        <img class="map__img img" src="img/map.jpg" alt="Седона" width="1199" height="594">
       </section>
     </main>
     <footer class="main-footer">
@@ -135,19 +133,18 @@
       </div>
       <ul class="main-footer__list list">
         <li class="main-footer__item">
-          <a class="main-footer__link link" href="#"></a>
+          <a class="main-footer__link link" href="#">1</a>
         </li>
         <li class="main-footer__item">
-          <a class="main-footer__link link" href="#"></a>
+          <a class="main-footer__link link" href="#">2</a>
         </li>
         <li class="main-footer__item">
-          <a class="main-footer__link link" href="#"></a>
+          <a class="main-footer__link link" href="#">3</a>
         </li>
       </ul>
       <p class="main-footer__copyright">Website by
         <a class="main-footer__copyright-icon link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img class="main-footer__copyright-img img" src="img/logo-htmlacademy.svg" alt="Логотип академии" width="115"
-            height="41">
+
         </a>
       </p>
     </footer>
