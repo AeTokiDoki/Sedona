@@ -464,28 +464,80 @@
   background-image: url("../img/filter-bg.jpg");
 }
 
+.search-hotel__form {
+  min-width: 1200px;
+  min-height: 217px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .services {
   color: var(--basic-white);
+  border: none;
 }
 
 .services__title {
   font-size: 16px;
   font-weight: 700;
+
+  max-width: 100%;
+  padding-top: 25px;
+  margin-left: 72px;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 112px;
+
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.services__items {
+  margin-bottom: 25px;
 }
 
 .type-house {
   color: var(--basic-white);
+
+  border: none;
 }
 
 .type-house__title {
   font-size: 16px;
   font-weight: bold;
+
+  max-width: 100%;
+  padding-top: 25px;
+  margin-left: 72px;
+}
+
+.type-house__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 112px;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.type-house__items {
+  margin-bottom: 25px;
 }
 
 /* price form */
 
 .filter-range {
   color: var(--basic-white);
+  border: none;
+}
+
+.filter-range__title {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 27px;
 }
 
 .btn-transparent {
