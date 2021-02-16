@@ -606,13 +606,46 @@
 
 /* sorting */
 
-.found-title {
+.found {
+  display: flex;
+}
+
+.found__title {
+  min-width: 117px;
+  margin-top: 28px;
+  margin-right: 10px;
+  margin-left: 73px;
   line-height: 26px;
 }
 
-.sorting__title {
+.sorting-title {
+  margin-top: 31px;
+  margin-left: 38px;
   font-size: 12px;
   line-height: 18px;
+}
+
+.sorting {
+  min-width: 800px;
+  width: 100%;
+}
+
+.sorting__list {
+  display: flex;
+  margin-top: 29px;
+}
+
+.sorting__items {
+  margin-left: 32px;
+}
+
+.sorting__link--type,
+.sorting__link--rating {
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.sorting__link--descending {
+  margin-left: 430px;
 }
 
 .sorting__link {
