@@ -697,8 +697,7 @@
 .hotels .hotels__desc {
   margin-top: 91px;
   margin-right: 73px;
-  height: 27px;
-  width: 110px;
+  margin-left: 31px;
   text-align: center;
 }
 
@@ -709,6 +708,10 @@
 .stars {
   margin-top: 28px;
   margin-right: -112px;
+  height: 17px;
+  width: 112px;
+  background-image: url("../img/icon/star.svg");
+  background-repeat: space round;
 }
 
 .four-stars {

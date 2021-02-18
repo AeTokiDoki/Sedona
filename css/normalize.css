@@ -177,8 +177,6 @@ button,
 input {
   /* 1 */
   overflow: visible;
-  color: inherit;
-  font: inherit;
 }
 
 /**
