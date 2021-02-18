@@ -36,36 +36,36 @@
     <section class="search-hotel">
       <h2 class="visually-hidden">фильтр жилья</h2>
       <form class="search-hotel__form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="services">
-          <legend class="services__title">Инфраструктура:</legend>
-          <ul class="services__list list">
-            <li class="services__items">
+        <fieldset class="services choice">
+          <legend class="services__title choice-title">Инфраструктура:</legend>
+          <ul class="services__list list choice-list">
+            <li class="services__items choice-items">
               <label class="services__label" for="swimming">Бассейн</label>
               <input class="services__input services__input--active" type="checkbox" id="swimming" name="swimming"
                 checked>
             </li>
-            <li class="services__items">
+            <li class="services__items choice-items">
               <label class="services__label" for="parking">Парковка</label>
               <input class="services__input" type="checkbox" id="parking" name="parking">
             </li>
-            <li class="services__items">
+            <li class="services__items choice-items">
               <label class="services__label" for="wifi">WI-FI</label>
               <input class="services__input" type="checkbox" id="wifi" name="wifi">
             </li>
           </ul>
         </fieldset>
-        <fieldset class="type-house">
-          <legend class="type-house__title">Тип жилья:</legend>
-          <ul class="type-house__list list">
-            <li class="type-house__items">
+        <fieldset class="type-house choice">
+          <legend class="type-house__title choice-title">Тип жилья:</legend>
+          <ul class="type-house__list list choice-list">
+            <li class="type-house__items choice-items">
               <label class="type-house__label" for="hotel">Гостиница</label>
               <input class="type-house__input" type="checkbox" id="hotel" name="hotel" checked>
             </li>
-            <li class="type-house__items">
+            <li class="type-house__items choice-items">
               <label class="type-house__label" for="motel">Мотель</label>
               <input class="type-house__input" type="checkbox" id="motel" name="motel" checked>
             </li>
-            <li class="type-house__items">
+            <li class="type-house__items choice-items">
               <label class="type-house__label" for="apartments">Апартаменты</label>
               <input class="type-house__input" type="checkbox" id="apartments" name="apartments" checked>
             </li>
@@ -74,8 +74,8 @@
         <fieldset class="filter-range">
           <legend class="filter-range__title">Стоимость в сутки (р):</legend>
           <div class="price-controls">
-            <label class="price-controls__min">от <input type="number" name="min-price" value="0" min="0"></label>
-            <label class="price-controls__max">до <input type="number" name="max-price" value="3000"></label>
+            <label class="price-controls__min">от 0 <input type="number" name="min-price" value="0" min="0"></label>
+            <label class="price-controls__max">до 3000 <input type="number" name="max-price" value="3000"></label>
           </div>
           <div class="range-controls">
             <div class="range-controls__scale">
@@ -84,7 +84,7 @@
             <div class="range-controls__less range-controls__less--check"></div>
             <div class="range-controls__more range-controls__more--check"></div>
           </div>
-          <button class="btn-transparent" type="submit">Показать</button>
+          <button class="btn-show" type="submit">Показать</button>
         </fieldset>
       </form>
     </section>
@@ -105,10 +105,10 @@
               <a class="sorting__link sorting__link--rating link tip" href="#">по рейтингу</a>
             </li>
             <li class="sorting__items">
-              <a class="sorting__link sorting__link--descending link" href="#" aria-label="По убыванию">1</a>
+              <a class="sorting__link sorting__link--descending link" href="#" aria-label="По убыванию"></a>
             </li>
             <li class="sorting__items">
-              <a class="sorting__link sorting__link--ascending link" href="#" aria-label="По возрастанию">1</a>
+              <a class="sorting__link sorting__link--ascending link" href="#" aria-label="По возрастанию"></a>
             </li>
           </ul>
         </div>
