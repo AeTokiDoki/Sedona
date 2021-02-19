@@ -378,7 +378,7 @@
 
   width: 458px;
   height: 58px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -489,7 +489,7 @@
   margin-left: 72px;
 
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .choice-items {
@@ -694,8 +694,8 @@
   margin: 0;
 }
 
-.hotels .hotels__detail,
-.hotels .hotels__take {
+.hotels__detail,
+.hotels__take {
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -717,7 +717,7 @@
   height: 17px;
   width: 112px;
   background-image: url("../img/icon/star.svg");
-  background-repeat: space round;
+  background-repeat: space;
 }
 
 .four-stars {
