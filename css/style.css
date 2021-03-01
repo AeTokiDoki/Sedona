@@ -638,11 +638,11 @@
   margin-left: 10px;
 }
 
-.main-footer__copyright-icon:hover {
+.main-footer__copyright-icon:hover svg {
   fill: var(--basic-blue);
 }
 
-.main-footer__copyright-icon:active {
+.main-footer__copyright-icon:active svg {
   fill: var(--logo-grey);
 }
 
