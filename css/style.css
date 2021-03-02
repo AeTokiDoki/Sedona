@@ -107,6 +107,14 @@
   margin: -1px;
 }
 
+.focus-visible {
+  outline: none;
+}
+
+.focus-visible:focus-visible {
+  outline: auto;
+}
+
 /* Main header */
 
 .main-header {
@@ -202,7 +210,7 @@
 
   display: block;
   height: 57px;
-  width: 1200px;
+  width: 100%;
 
   background-image: url("../img/intro-mask.svg");
 }
@@ -511,11 +519,6 @@
 
   background-color: var(--basic-background);
   border: none;
-  outline: none;
-}
-
-.search-form__button:focus-visible {
-  outline: auto;
 }
 
 .search-form__button:hover {
@@ -612,7 +615,7 @@
   justify-content: center;
   padding-top: 33px;
   width: 100%;
-  max-width: calc(52px * 5);
+  max-width: 260px;
 }
 
 .main-footer__item {
@@ -877,23 +880,18 @@
   opacity: 1;
 }
 
-.sorting__link--descending,
-.sorting__link--ascending {
+.sort-arrow {
   border: none;
   font-size: 18px;
   color: var(--arrow-basic);
   opacity: 1;
 }
 
-.sorting__link--ascending:hover {
+.sort-arrow:hover {
   color: var(--basic-black);
 }
 
-.sorting__link--descending:hover {
-  color: var(--basic-black);
-}
-
-.sorting__link--descending:active {
+.sort-arrow:active {
   color: var(--basic-blue);
 }
 
@@ -902,10 +900,6 @@
   padding-top: 3px;
   margin-left: 8px;
 
-  color: var(--basic-blue);
-}
-
-.sorting__link--ascending:active {
   color: var(--basic-blue);
 }
 
