@@ -115,6 +115,10 @@
   outline: auto;
 }
 
+.active-opacity:active {
+  color: var(--blue-opacity);
+}
+
 /* Main header */
 
 .main-header {
@@ -429,9 +433,8 @@
   background-color: var(--brown);
 }
 
-.search__button:active {
-  color: var(--blue-opacity);
-
+.search__button:active,
+.hotels__take:active {
   background-color: var(--extra-brown);
 }
 
@@ -549,8 +552,6 @@
 }
 
 .search-form__btn:active {
-  color: var(--blue-opacity);
-
   background-color: var(--extra-blue);
 }
 
@@ -1038,8 +1039,6 @@
 }
 
 .hotels__detail:active {
-  color: var(--blue-opacity);
-
   background-color: var(--extra-blue);
 }
 
@@ -1051,12 +1050,6 @@
 
 .hotels__take:hover {
   background-color: var(--brown);
-}
-
-.hotels__take:active {
-  color: var(--blue-opacity);
-
-  background-color: var(--extra-brown);
 }
 
 .hotels__desc {
