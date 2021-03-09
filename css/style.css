@@ -121,6 +121,17 @@
   color: var(--blue-opacity);
 }
 
+/* Chrome, Safari, Edge, Opera */
+.hide-arrows::-webkit-outer-spin-button,
+.hide-arrows::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+.hide-arrows[type="number"] {
+  -moz-appearance: textfield;
+}
+
 /* Main header */
 
 .main-header {
@@ -587,12 +598,20 @@
   background-repeat: no-repeat;
 }
 
+.google-map {
+  border: none;
+}
+
 /* main footer */
 
 .main-footer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 111px;
   padding-right: 138px;
+  padding-top: 23px;
+  padding-bottom: 33px;
 
   font-size: 21px;
   line-height: 26px;
@@ -600,25 +619,26 @@
 }
 
 .main-footer--moved {
-  margin-top: -120px;
+  margin-top: -118px;
 
   background-color: var(--basic-white);
   opacity: 0.9;
 }
 
 .main-footer__contacts {
-  padding-left: 14px;
+  text-align: center;
+  max-width: 252px;
+  width: 100%;
 }
 
 .main-footer__text {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
   text-align: center;
-  margin-top: 23px;
-  margin-bottom: 9px;
 }
 
 .main-footer__tel {
-  margin-bottom: 36px;
-
   color: var(--basic-black);
 }
 
@@ -626,10 +646,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 33px;
-  margin-left: 120px;
   width: 100%;
   max-width: 260px;
+  padding-top: 10px;
 }
 
 .main-footer__item {
@@ -663,20 +682,17 @@
 
 .main-footer__copyright {
   display: flex;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 135px;
-
+  margin: 0;
+  padding: 0;
+  padding-left: 26px;
+  padding-top: 10px;
   font-size: 14px;
   font-weight: 400;
 }
 
 .copyright {
   padding-top: 8px;
-}
-
-.main-footer__copyright-icon {
-  margin-left: 10px;
+  padding-right: 9px;
 }
 
 .main-footer__copyright-icon:hover svg {
@@ -1176,15 +1192,4 @@
 
 .hotels__desc {
   color: var(--rating-text);
-}
-
-/* Chrome, Safari, Edge, Opera */
-.hide-arrows::-webkit-outer-spin-button,
-.hide-arrows::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-/* Firefox */
-.hide-arrows[type="number"] {
-  -moz-appearance: textfield;
 }
