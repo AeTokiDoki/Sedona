@@ -38,45 +38,41 @@
       <section class="search-hotel">
         <h2 class="visually-hidden">фильтр жилья</h2>
         <form class="search-hotel__form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="services choice">
+          <fieldset class="services choice fieldset">
             <legend class="services__title choice-title">Инфраструктура:</legend>
             <ul class="services__list list choice-list">
               <li class="services__items choice-items">
-                <input class="services__input visually-hidden check-input" type="checkbox" id="swimming" name="swimming"
-                  checked>
+                <input class="services__input check-input" type="checkbox" id="swimming" name="swimming" checked>
                 <label class="services__label" for="swimming">Бассейн</label>
               </li>
               <li class="services__items choice-items">
-                <input class="services__input visually-hidden check-input" type="checkbox" id="parking" name="parking">
+                <input class="services__input check-input" type="checkbox" id="parking" name="parking">
                 <label class="services__label" for="parking">Парковка</label>
               </li>
               <li class="services__items choice-items">
-                <input class="services__input visually-hidden check-input" type="checkbox" id="wifi" name="wifi">
+                <input class="services__input check-input" type="checkbox" id="wifi" name="wifi">
                 <label class="services__label" for="wifi">WI-FI</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="type-house choice">
+          <fieldset class="type-house choice fieldset">
             <legend class="type-house__title choice-title">Тип жилья:</legend>
             <ul class="type-house__list list choice-list">
               <li class="type-house__items choice-items">
-                <input class="type-house__input visually-hidden check-input" type="checkbox" id="hotel" name="hotel"
-                  checked>
+                <input class="type-house__input check-input" type="checkbox" id="hotel" name="hotel" checked>
                 <label class="type-house__label" for="hotel">Гостиница</label>
               </li>
               <li class="type-house__items choice-items">
-                <input class="type-house__input visually-hidden check-input" type="checkbox" id="motel" name="motel"
-                  checked>
+                <input class="type-house__input check-input" type="checkbox" id="motel" name="motel" checked>
                 <label class="type-house__label" for="motel">Мотель</label>
               </li>
               <li class="type-house__items choice-items">
-                <input class="type-house__input visually-hidden check-input" type="checkbox" id="apartments"
-                  name="apartments" checked>
+                <input class="type-house__input check-input" type="checkbox" id="apartments" name="apartments" checked>
                 <label class="type-house__label" for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-range">
+          <fieldset class="filter-range fieldset">
             <legend class="filter-range__title">Стоимость в сутки (р):</legend>
             <div class="price-controls">
               <label class="price-controls__min">от<input class="hide-arrows" type="number" name="min-price" value="0"
@@ -111,7 +107,7 @@
               <li class="sorting__items">
                 <a class="sorting__link link tip" href="#">по рейтингу</a>
               </li>
-              <li class="sorting__items">
+              <li class="sorting__items items-left">
                 <a class="sorting__link sorting__link--descending link sort-arrow" href="#"
                   aria-label="По убыванию">⯅</a>
               </li>
