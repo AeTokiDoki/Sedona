@@ -90,6 +90,8 @@
 .link {
   text-decoration: none;
   color: var(--basic-white);
+
+  transition-duration: 250ms;
 }
 
 .title {
@@ -453,6 +455,8 @@
 
   background-color: var(--basic-brown);
   border: none;
+
+  transition-duration: 250ms;
 }
 
 .search__button:hover {
@@ -542,6 +546,8 @@
 
 .calendar {
   margin-bottom: 4px;
+
+  transition-duration: 250ms;
 }
 
 .search-form__button {
@@ -553,6 +559,8 @@
 
   background-color: var(--basic-background);
   border: none;
+
+  transition-duration: 250ms;
 }
 
 .search-form__button:hover {
@@ -576,6 +584,7 @@
 
   background-color: var(--basic-blue);
   border: none;
+  transition-duration: 250ms;
 }
 
 .search-form__btn:hover {
@@ -955,6 +964,7 @@
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   cursor: pointer;
+  transition-duration: 250ms;
 }
 
 .btn-show:hover {
