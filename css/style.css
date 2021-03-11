@@ -555,7 +555,7 @@
 .calendar {
   margin-bottom: 4px;
 
-  transition: 250ms;
+  transition: fill 250ms;
 }
 
 .search-form__button {
