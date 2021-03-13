@@ -53,7 +53,7 @@ form.addEventListener('submit', function (evt) {
 });
 
 window.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 37) {
+  if (evt.keyCode === 27) {
     if (layer.classList.contains('modal-show')) {
       evt.preventDefault();
       layer.classList.remove('modal-show');
