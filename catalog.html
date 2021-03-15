@@ -93,7 +93,7 @@
       </section>
       <section class="available-hotel">
         <h2 class="visually-hidden">Список доступных гостиниц</h2>
-        <aside class="found">
+        <div class="found">
           <span class="found__title title">найдено: 3</span>
           <h3 class="sorting-title">сортировка:</h3>
           <div class="sorting">
@@ -109,15 +109,21 @@
               </li>
               <li class="sorting__items items-left">
                 <a class="sorting__link sorting__link--descending link sort-arrow" href="#"
-                  aria-label="По убыванию">⯅</a>
+                  aria-label="По убыванию"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 0L0 10h11z"></path>
+                </svg>
+                    </a>
               </li>
               <li class="sorting__items">
                 <a class="sorting__link sorting__link--ascending link sort-arrow" href="#"
-                  aria-label="По возрастанию">⯆</a>
+                  aria-label="По возрастанию"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                    <path d="M5.5 10L0 0h11"></path>
+                </svg>
+                    </a>
               </li>
             </ul>
           </div>
-        </aside>
+        </div>
         <ul class="hotels list">
           <li class="hotels__item">
             <img class="hotels__image img" src="img/amara-resort.jpg" alt="Фото гостиницы Amara Resort & Spa" width="135" height="90">
@@ -143,7 +149,7 @@
             <span class="stars three-stars"></span>
             <p class="hotels__desc">Рейтинг: 8.9</p>
           </li>
-          <li class="hotels__item line">
+          <li class="hotels__item">
             <img class="hotels__image img" src="img/villas.jpg" alt="Фото апартаментов Villas at Poco Diablo" width="135" height="90">
             <h3 class="hotels__title">
               <a class="hotels__link link" href="#">Villas at Poco Diablo</a>
